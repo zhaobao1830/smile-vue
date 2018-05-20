@@ -47,6 +47,8 @@
          </swiper>
        </div>
     </div>
+    <swiper-default></swiper-default>
+    <swiper-default3></swiper-default3>
   </div>
 </template>
 
@@ -54,7 +56,8 @@
   import axios from 'axios'
   import 'swiper/dist/css/swiper.css'
   import {swiper , swiperSlide} from 'vue-awesome-swiper'
-
+  import swiperDefault from '../swiper/swiperDefault.vue'
+  import swiperDefault3 from '../swiper/swiperDefault3.vue'
   export default {
     data () {
       return {
@@ -85,7 +88,9 @@
     },
     components: {
       swiper,
-      swiperSlide
+      swiperSlide,
+      swiperDefault,
+      swiperDefault3
     }
   }
 </script>
